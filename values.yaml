@@ -1,0 +1,12 @@
+kubernetes:
+  host: https://kubernetes.default
+
+helloworld:
+  namespace: default
+  image:
+    name: httpd
+    tag: latest
+    pullPolicy: IfNotPresent
+  service:
+    ingressClass: internal-ingress
+
